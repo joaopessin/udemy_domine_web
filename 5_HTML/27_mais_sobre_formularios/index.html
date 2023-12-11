@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre formulários</title>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form>
+      <label>E-mail</label>
+      <br>
+      <input type="email">
+      <br>
+
+      <br>
+      <label>Senha</label>
+      <br>
+      <input type="password">
+      <br>
+
+      <br>
+      <button type="submit" value="login">Login</button>
+    </form>
+
+    <h2>Cadastre-se</h2>
+    <form>
+      <label>Nome completo</label>
+      <br>
+      <input type="text">
+      <br>
+
+      <br>
+      <label>Sexo</label>
+      <br>
+      <input type="radio" name="sexo" value="M"> <!-- name: utilizado para identificar que se trata do mesmo "campo" (não poder marcar mais de 1 opção) -->
+      <span>Masculino</span>
+      <br>
+      <input type="radio" name="sexo" value="F"> <!-- value: identificar o valor que o usuário escolheu -->
+      <span>Feminino</span>
+      <br>
+
+      <br>
+      <label>Interesses</label>
+      <br>
+      <input type="checkbox" name="interesses">
+      <span>Futebol</span>
+      <br>
+      <input type="checkbox" name="interesses">
+      <span>Moda</span>
+      <br>
+      <input type="checkbox" name="interesses">
+      <span>Música</span>
+      <br>
+
+      <br>
+      <label>Informações adicionais</label>
+      <br>
+      <textarea cols="21" rows="7" placeholder="Insira aqui alguma informação adicional caso necessário"></textarea>
+      <br>
+
+      <br>
+      <label>Estado</label>
+      <br>
+      <select name="estados">
+        <option value="ES">ES</option>
+        <option value="RJ">RJ</option>
+        <option value="SP">SP</option>
+      </select>
+      <br>
+
+      <br>
+      <label>E-mail</label>
+      <br>
+      <input type="text">
+      <br>
+
+      <br>
+      <label>Senha</label>
+      <br>
+      <input type="password">
+      <br>
+
+      <br>
+      <button type="submit" value="cadastrar">Cadastrar</button>
+    </form>
+
+    <p>&copy;Copyright</p> <!-- character entities: são caracteres especiais (entidades) que pode-se utilizar no HTML -->
+  </body>
+</html>
