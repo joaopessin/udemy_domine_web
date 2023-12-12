@@ -1,0 +1,47 @@
+/* ---------- GERAL ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(./imagens/fundo.png);
+}
+
+#principal {
+  width: 1150px;
+  margin: 1%;
+}
+
+/* ---------- CABEÇALHO ---------- */
+#cabecalho a, #cabecalho span {
+  font-size: 1.25rem; /* rem: relativo ao pai (por padrão começa sendo 16px - 1rem */
+  font-weight: 500;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+#cabecalho > img, #cabecalho > p {
+  width: 100%;
+  margin: 0;
+}
+
+#cabecalho > p {
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* ---------- CONTEÚDO ---------- */
+#conteudo {
+  width: 98%;
+  padding: 1%;
+  background-color: #FFF;
+}
+
+#conteudo > h2, #conteudo > p > strong { color: #4c4c4c; }
+
+/* ---------- RODAPÉ ---------- */
+#rodape { text-align: center; }
+
+#rodape > p {
+  margin: 0;
+  padding: 20px 0;
+}

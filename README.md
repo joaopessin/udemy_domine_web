@@ -12,4 +12,4 @@ Repositório para o curso "Domine Web" na Udemy, onde estou explorando tecnologi
 1. Dê uma estrela ⭐ se encontrar útil!
 2. Fork, clone e contribua.
 3. Abra uma issue para dúvidas ou sugestões.
-4. Divirta-se codificando! 😊✨
+4. Divirta-se codificando! ✨
