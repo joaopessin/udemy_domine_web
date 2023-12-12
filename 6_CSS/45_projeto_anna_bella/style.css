@@ -36,7 +36,14 @@ body {
   background-color: #FFF;
 }
 
+#conteudo > img {
+  width: 60%;
+  border: 6px inset #8c8c8c;
+}
+
 #conteudo > h2, #conteudo > p > strong { color: #4c4c4c; }
+
+#conteudo #email, #conteudo #telefone { text-decoration: underline; }
 
 /* ---------- RODAPÉ ---------- */
 #rodape { text-align: center; }
