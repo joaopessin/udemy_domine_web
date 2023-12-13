@@ -1,0 +1,53 @@
+/* ---------- GERAL ---------- */
+#principal {
+  width: 1300px;
+  padding: 10px;
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.conteudo {
+  width: 675px;
+  display: block;
+  background-color: rgb(215, 255, 215);
+}
+
+/* ---------- PRIMEIRO CONTEÚDO ---------- */
+.paragrafo { width: 337.5px; }
+
+#paragrafo1 {
+  display: inline-block; /* funciona como "inline" somente quanto é possível adicionar todo conteúdo naquela largura, caso contrário, funcionará como "block" */
+  background-color: rgb(255, 222, 222);
+}
+
+#paragrafo2 { display: inline; } /* algumas tags como <p> são por padrão como "block", ou seja, só se tem a mesma na linha inteira, enquanto o "inline" permite encaixar todos elementos na mesma linha */
+
+/* ---------- SEGUNDO CONTEÚDO ---------- */
+.conteudo:nth-child(2) > h2 { /* "nth-child(): refere-se a qual filho deseja selecionar daquele elemento */
+  position: relative; /* por padrão o mesmo é "static"; "relative" serve para varias a posição do mesmo de acordo com a posição inicial */
+  top: 30px; /* "top", "bottom", "left" e "right" são as posição que pode-se variar */
+  left: 30px;
+}
+
+/* ---------- TERCEIRO CONTEÚDO ---------- */
+.conteudo:nth-child(3) > #paragrafo1 {
+  width: 350px;
+  position: absolute; /* o elemento sai de todos os "containers", como um elemento unificado e absoluto (sem interferência de outros elementos) */
+  right: 30px; /* a partir disso tem como coloca-lo em alguma posição diferente da tela */
+  z-index: 1;
+}
+
+/* ---------- QUARTO CONTEÚDO ---------- */
+.conteudo:nth-child(4){
+  width: 350px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 0;
+}
+
+/* ---------- QUINTO CONTEÚDO ---------- */
+.conteudo:nth-child(5) a { color: blue; }
+.conteudo:nth-child(5) a:link{ color: green; } /* link não visitado */
+.conteudo:nth-child(5) a:visited{ color: red; } /* link visitado */
+.conteudo:nth-child(5) a:hover{ color: brown; } /* mouse emcima do link */
+.conteudo:nth-child(5) a:active{ color: yellow; } /* link ativo (quando clica) */
