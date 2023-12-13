@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos e Posicionamentos</title>
+
+    <style>
+      #principal {
+        width: 1350px;
+        border: 1px solid rgb(70, 70, 70);
+      }
+
+      .conteudo {
+        width: 675px;
+        display: block;
+        background-color: rgb(215, 255, 215);
+      }
+
+      /* ---------- PRIMEIRO CONTEÚDO ---------- */
+      .paragrafo { width: 337.5px; }
+
+      #paragrafo1 {
+        display: inline-block; /* funciona como "inline" somente quanto é possível adicionar todo conteúdo naquela largura, caso contrário, funcionará como "block" */
+        background-color: rgb(255, 222, 222);
+      }
+
+      #paragrafo2 { display: inline; } /* algumas tags como <p> são por padrão como "block", ou seja, só se tem a mesma na linha inteira, enquanto o "inline" permite encaixar todos elementos na mesma linha */
+      
+      /* ---------- SEGUNDO CONTEÚDO ---------- */
+      .conteudo:nth-child(2) > h2 { /* "nth-child(): refere-se a qual filho deseja selecionar daquele elemento */
+        position: relative; /* por padrão o mesmo é "static"; "relative" serve para varias a posição do mesmo de acordo com a posição inicial */
+        top: 25px; /* "top", "bottom", "left" e "right" são as posição que pode-se variar */
+        left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="principal">
+      <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p class="paragrafo" id="paragrafo1">
+          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum</strong> has been the industry's standard dummy text ever since the <i>1500s</i>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+
+        <p class="paragrafo" id="paragrafo2">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+
+      <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>
+          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum</strong> has been the industry's standard dummy text ever since the <i>1500s</i>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+
+    <style>
+      #principal {
+        width: 1350px;
+        border: 1px solid rgb(50, 50, 50);
+      }
+
+      .conteudo {
+        width: 410px; /* o calculo deve ser feito a partir da largura total, considerando a remoção por margens e espaçamentos: 410 x 3 + ((10 x 2) x 3) x 2 = 1350px*/
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        background-color: rgb(200, 205, 255);
+      }
+
+      #limpar { clear: left; } /* sempre que utilizado a função "float", deve-se usar o "clear" após o mesmo para evitar um mal comportamento dos elementos */
+    </style>
+  </head>
+
+  <body>
+    <div id="principal">
+      <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>
+          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum</strong> has been the industry's standard dummy text ever since the <i>1500s</i>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+
+        <a href="#">Veja mais</a>
+      </div>
+
+      <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>
+          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum</strong> has been the industry's standard dummy text ever since the <i>1500s</i>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+
+        <a href="#">Veja mais</a>
+      </div>
+
+      <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>
+          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum</strong> has been the industry's standard dummy text ever since the <i>1500s</i>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+
+        <a href="#">Veja mais</a>
+      </div>
+
+      <div id="limpar"></div>
+    </div>
+  </body>
+</html>
