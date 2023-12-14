@@ -9,18 +9,16 @@ body {
   background-color: #ECECEC;
 }
 
-#principal { border: 1px solid black; }
-
 /* ---------- CABEÇALHO ---------- */
 #cabecalho {
   text-align: center;
-  height: 200px;
+  height: 170px;
   background-color: #F9C200;
 }
 
 #cabecalho > h1 {
-  padding: 32px 0;
-  font-size: 48px;
+  padding: 26px 0;
+  font-size: 42px;
   font-weight: 600;
   color: #FFF;
 }
@@ -33,10 +31,10 @@ body {
 }
 
 #cabecalho a {
-  margin-left: 24px;
-  padding: 12px;
-  font-size: 22px;
-  font-weight: bold;
+  margin-left: 14px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
   color: #FFF;
   text-decoration: none;
 }
@@ -48,35 +46,116 @@ body {
 
 /* ---------- CORPO ---------- */
 #corpo {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  background-color: #c6e2f8;
 }
 
-#corpo div {
-  margin: 20px 0;
+#corpo > div {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/* CONTEÚDOS ---------- */
+#corpo > #conteudos {
+  width: 61%;
+  margin-left: 30px;
   background-color: #FFF;
-}
-
-#corpo > #conteudo {
-  width: 800px;
-  height: 900px;
-  margin-left: 45px;
   float: left;
 }
 
-#corpo > #postagens {
-  width: 400px;
-  height: 350px;
-  margin-right: 45px;
-  float: right;
-  
+#corpo .conteudo {
+  width: 100%;
+  margin: 5px auto;
+  padding: 5px;
+  padding-bottom: 10px;
 }
-#corpo > #categoria {
-  width: 400px;
-  height: 350px;
-  margin-right: 45px;
+
+.conteudo * { margin: 10px 5px; }
+.conteudo:nth-child(1), .conteudo:nth-child(2) { border-bottom: 15px solid #ECECEC; }
+.conteudo > h2, .conteudo > a { color: #F9C200; }
+.conteudo p:nth-child(2) { font-weight: 600; }
+.conteudo > p, .conteudo > a { font-size: 14px; }
+.conteudo > img { width: 95%; }
+
+.conteudo > a {
+  margin: 0;
+  padding: 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.conteudo a:hover { text-decoration: underline; }
+
+/* POSTAGENS RECENTES ---------- */
+#corpo > #postagens_recentes {
+  width: 30%;
+  margin-right: 30px;
+  background-color: #FFF;
   float: right;
 }
 
-#rodape { clear: both; }
+.postagem:nth-child(1), .postagem:nth-child(2) { border-bottom: 5px solid #ECECEC; }
+.postagem *, #categorias * { margin: 10px 5px; }
+.postagem > p, .postagem > a { font-size: 14px; }
+
+.postagem > p {
+  max-width: 90%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.postagem > h3, #categorias > h3 {
+  margin: 10px;
+  padding: 10px;
+  color: #534A41;
+  background-color: #ECECEC;
+}
+
+.postagem > a {
+  padding: 5px;
+  color: #F9C200;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  left: 5px;
+  bottom: 10px;
+}
+
+.postagem a:hover { text-decoration: underline; }
+
+/* CATEGORIAS ---------- */
+#corpo > #categorias {
+  width: 30%;
+  margin-right: 30px;
+  background-color: #FFF;
+  float: right;
+}
+
+#categorias > div { margin-left: 10px; }
+
+#categorias a {
+  padding: 5px;
+  display: block;
+  color: #F9C200;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#categorias a:hover { text-decoration: underline; }
+
+/* LIMPAR ---------- */
+#limpar { clear: both; }
+
+/* ---------- RODAPÉ ---------- */
+#rodape {
+  text-align: center;
+  background-color: #534A41;
+}
+
+#rodape h5 {
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+}
