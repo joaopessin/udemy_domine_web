@@ -1,0 +1,82 @@
+/* ---------- GERAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ECECEC;
+}
+
+#principal { border: 1px solid black; }
+
+/* ---------- CABEÇALHO ---------- */
+#cabecalho {
+  text-align: center;
+  height: 200px;
+  background-color: #F9C200;
+}
+
+#cabecalho > h1 {
+  padding: 32px 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+#cabecalho > h1 > span { color: #534A41; }
+
+#cabecalho > #menu {
+  padding: 24px;
+  display: block;
+}
+
+#cabecalho a {
+  margin-left: 24px;
+  padding: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#cabecalho a:hover {
+  color: #F9C200;
+  background-color: #FFF;
+}
+
+/* ---------- CORPO ---------- */
+#corpo {
+  width: 70%;
+  margin: auto;
+  background-color: #c6e2f8;
+}
+
+#corpo div {
+  margin: 20px 0;
+  background-color: #FFF;
+}
+
+#corpo > #conteudo {
+  width: 800px;
+  height: 900px;
+  margin-left: 45px;
+  float: left;
+}
+
+#corpo > #postagens {
+  width: 400px;
+  height: 350px;
+  margin-right: 45px;
+  float: right;
+  
+}
+#corpo > #categoria {
+  width: 400px;
+  height: 350px;
+  margin-right: 45px;
+  float: right;
+}
+
+#rodape { clear: both; }
