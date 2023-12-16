@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores: de comparação</title>
+  </head>
+  <body>
+    <script>
+      /*
+        ------------------------------
+        OPERADORES DE COMPARAÇÃO:
+        - ==: igual | comparação de valor
+        - ===: igual | comparação de valor e tipo
+        - != | !==: diferente
+        - >: maior
+        - <: menor
+        - <=: menor ou igual
+        - >=: maior ou igual
+        ------------------------------
+
+      if (true) { document.write('O bloco é verdadeiro.');
+      } else { document.write('O bloco é falso.'); }
+
+      var condicao = null;
+
+      if (5 == '5') { condicao = true;
+      } else { condicao = false; }
+
+      document.write('<br>');
+      document.write('5 possui o mesmo valor de "5" ? ' + condicao);
+      */
+
+      document.write('<h2>JavaScript: Operadores - parte 1</h2>');
+
+      var nome = prompt('Digite o nome do aluno:');
+      var nota = parseFloat(prompt('Digite a nota do aluno:')); // parseFloat(): define o tipo da variável como 'float' / decimal | também existe o parseInt() (define como 'int' / inteiro)
+      var media = 6;
+
+      if (nota >= media) { document.write('<p>Aluno' + nome.toString() + 'APROVADO com sucesso!</p>'); // toString(): "transforma" variável para o tipo 'string' / caracter
+    } else { document.write('<p>Aluno REPROVADO!</p>'); }
+
+    document.write('<a href="./parte2.html">Parte 2<a/>');
+    </script>
+  </body>
+</html>

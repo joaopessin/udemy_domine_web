@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores: lógicos</title>
+  </head>
+  <body>
+    <script>
+      /*
+        ------------------------------
+        OPERADORES LÓGICOS:
+        - && (E): caso todas expressões forem verdadeiras
+        - || (OU): caso uma ou outra expressão for verdadeira
+        - ! (NEGAÇÃO): inverte a expressão
+      */
+      document.write('<h2>JavaScript: Operadores - parte 2</h2>');
+
+      var nota1 = parseFloat(prompt('Digite a primeira nota do aluno: '));
+      var nota2 = parseFloat(prompt('Agora, digite a segunda: '));
+      var media = 6;
+      var condicaoAluno = false;
+
+      if (nota1 >= media && nota2 >= media) { condicaoAluno = !condicaoAluno; }
+
+      document.write('<p>O aluno foi aprovado com sucesso? <br><strong>' + condicaoAluno + '<strong></p>');
+        document.write('<a href="./parte3.html">Parte 3<a/>');
+    </script>
+  </body>
+</html>

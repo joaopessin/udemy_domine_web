@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores: ternários</title>
+  </head>
+  <body>
+    <script>
+      document.write('<h2>JavaScript: Operadores - parte 3</h2>');
+
+      var nota = parseFloat(prompt('Digite a nota do aluno:'));
+      var frequencia = parseFloat(prompt('Agora, digite a frequência do aluno:'));
+      var mediaNota = 6;
+      var mediaFrequencia = 70;
+      var resultado = nota >= mediaNota && frequencia >= mediaFrequencia ? 'Aluno PASSOU com sucesso!' : 'O aluno foi REPROVADO!';
+
+      document.write(resultado);
+    </script>
+  </body>
+</html>
