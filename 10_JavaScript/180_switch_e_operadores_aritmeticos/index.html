@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Revisão: IMC</title>
+  </head>
+  <body>
+    <script>
+      /*
+        ------------------------------
+        OPERADORES ARITMÉTICOS:
+        - (+): soma
+        - (-): subtração
+        - (*): multiplicação
+        - (/): divisão
+        - (%): resto da divisão
+        - (**): exponenciação
+        - (//): valor inteiro da divisão
+        - (++): incremento (1)
+        - (--): decremento (1)
+
+        OBS.:
+        - Pode-se atribuir valor utilizando operadores, como: (+=) - mais / igual, soma e atribui valor simultaneamente
+        - Ordem: () | (**, //) | (*, /, %) | (+, -)
+
+        SWITCH:
+        switch(parametro) {
+          case 1:
+            condicao;
+            break;
+          case 2:
+            condicao;
+            break;
+          default:
+            excessao;
+        }
+      */
+    
+      document.write('<h2>Calculando IMC</h2>');
+
+      var nome = prompt('Informe seu nome:');
+      var altura = parseFloat(prompt('Agora, informe sua altura (em centímetros):')) / 100;
+      var peso = parseFloat(prompt('Por fim, digite seu peso:'));
+      var imc = peso / (altura * altura) ;
+      var estado;
+
+      if(imc < 16) {
+        estado = 'EXTREMAMENTE abaixo do peso';
+      } else if(imc < 16) {
+        estado = 'MUITO abaixo do peso';
+      } else if(imc < 18) {
+        estado = 'abaixo do peso';
+      } else if(imc < 24) {
+        estado = 'com peso ideal';
+      } else if(imc < 29) {
+        estado = 'com sobrepeso';
+      } else if(imc < 34) {
+        estado = 'com OBESIDADE grau I';
+      } else if(imc < 39) {
+        estado = 'com OBESIDADE grau II';
+      } else { estado = 'com OBESIDADE grau III'; }
+
+      document.write('<p>' + nome + ', você está ' + estado + '! Lembre-se de consultar um médico para melhores recomendações.' + '</p>');
+    </script>
+  </body>
+</html>
