@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções nativas</title>
+  </head>
+  <body>
+    <script>
+      /* ---------- STRINGS ---------- */
+      document.write('Pequeno texto'.length);
+
+      document.write('<br>');
+      document.write('Pequeno texto'.charAt(3));
+
+      var nome = ' João Vitor Santos ';
+
+      document.write('<br>');
+      document.write(nome.indexOf('a'));
+
+      document.write('<br>');
+      document.write(nome.replace('Santos', 'Pessin'));
+
+      document.write('<br>');
+      document.write(nome.toUpperCase());
+
+      document.write('<br>');
+      document.write('-' + nome.trim() + '-'); // remove espaços das bordas
+
+      /* ---------- MATH ---------- */
+      document.write('<hr>');
+
+      document.write(Math.round(7.6)); // .round(): arredonda de acordo com o valor mais próximo | .ceil(): arredonda para cima | .floor(): arredonda para baixo
+
+      document.write('<br>');
+      document.write(Math.random()); // .random(): valor aleatório entre 0 e 1
+
+      /* ---------- DATE ---------- */
+      document.write('<hr>');
+
+      var dataAtual = new Date(); // criando um novo objeto
+      var dataFutura = new Date();
+
+      document.write(dataAtual.getDate() + ' / ' + (dataAtual.getMonth() + 1) + ' / ' + dataAtual.getFullYear()); // deve-se colocar '+ 1' pois inicia do '0'
+
+      document.write('<br><br>');
+      document.write(dataAtual.toString());
+
+      dataFutura.setDate(dataAtual.getDate() + 30);
+
+      document.write('<br>');
+      document.write(dataFutura.toString());
+
+      var dataAniversario = new Date(2001, 1, 17);
+
+      document.write('<br>');
+      document.write(dataAniversario.toString());
+
+      document.write('<br><br>');
+      document.write(dataAniversario.getTime()); // tempo de existência desde 1970 e mílisegundos
+
+      document.write('<br>');
+      document.write(dataAtual.getTime());
+
+      document.write('<br>');
+      document.write('Diferença: ' + Math.floor(((((Math.abs(dataAniversario.getTime() - dataAtual.getTime()) / 1000) / 60) / 60) / 24) / 365) + ' anos'); // retorna o valor absoluto do número
+    </script>
+  </body>
+</html>

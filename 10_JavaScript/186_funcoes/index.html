@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+  </head>
+
+  <body>
+    <script>
+      var saudacao = function() { alert('Seja bem-vindo(a) ao exercício de funções!'); } // função anônima + conceito wrapper (armazenar a mesma em uma variável)
+
+      saudacao();
+
+      var valor1 = parseFloat(prompt('Digite um valor:'));
+      var valor2 = parseFloat(prompt('Agora, digite outro valor:'));
+
+      document.write('<p>A soma dos valores é: <strong>' + soma(valor1, valor2) + '</strong></p>');
+
+      function soma(a, b) { // a função pode ser declarada depois de ser chamada, no JavScript ela é reconhecida antes do código ser executado
+        b = b === undefined ? 0 : b; // lidando com erros: caso não seja dado o valor de 'b' será atribuido '0'
+        return a + b;
+      }
+
+      /* ---------- FUNÇÕES CALLBACKS (MOTIVO DE USO DOS WRAPPERS) ---------- */
+      document.write('<hr>');
+
+      var titulo = function() { document.write('<h3>Título</h3>'); }
+      var descricao = function() { document.write('<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>'); }
+
+      function texto() {
+        titulo();
+        descricao();
+      }
+
+      texto();
+
+      /*
+        --------------------
+        OBSERVAÇÕES:
+        - 3 tipos de escopos: global, funções e blocos
+      */
+    </script>
+  </body>
+</html>
