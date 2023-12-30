@@ -4,8 +4,8 @@ Repositório para o curso "Domine Web" na Udemy, onde estou explorando tecnologi
 
 ### Tecnologias 🛠️
 
-- **Front-End:** HTML, CSS, JavaScript(POO | ES6), Bootstrap, JQuery, Sass, Ionic e WordPress.
-- **Back-End:** PHP(POO | PDO), MySQL(CRUD), Ajax, MVC e Slim Framework (APIs).
+- **Front-End:** HTML, CSS, JavaScript (POO | ES6), Bootstrap, JQuery, Sass, Ionic e WordPress.
+- **Back-End:** PHP (POO | PDO), MySQL (CRUD), Ajax, MVC e Slim Framework (APIs).
 
 ### Contribuição 🤝
 
